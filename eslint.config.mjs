@@ -25,6 +25,8 @@ export default [
     files: ['**/*.{js,jsx}'],
     rules: {
       ...google.rules,
+      "valid-jsdoc": "off",
+      "require-jsdoc": 'off'
     },
   },
 ];

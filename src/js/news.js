@@ -49,7 +49,7 @@ export default class TimeLine {
 
   init() {
     this.allNews = document.querySelector('.all-news');
-    this.input = document.querySelector('.news-block input')
+    this.input = document.querySelector('.news-block input');
     this.input.addEventListener('keyup', async (e) => {
       if (e.code == 'Enter' && this.input.value != '') {
         const message = this.input.value;
