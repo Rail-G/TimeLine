@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.news-block {
+    width: 800px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    flex-direction: column;
+    position: relative;
+}
+
+.all-news {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.news {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.news:last-child {
+    margin-bottom: 0;
+}
+
+.news-data {
+    display: flex;
+    justify-content: right;
+    margin: 5px;
+}
+
+.news-text {
+    font-size: 17px
+}
+
+.news-geolocation {
+    margin-top: 5px;
+}
+
+.news-block input {
+    font-size: 13px;
+    width: 100%;
+    padding: 5px;
+}
+
+.alert-block {
+    width: 400px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50%;
+}
+
+.alert-head, .alert-body, .alert-input-header{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.alert-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.alert-input input {
+    width: 100%;
+    padding: 5px;
+}
+
+.alert-btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.alert-btn button {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.alert-btn button:hover {
+    background-color: #a7a7a7;
+}
+
+.error {
+    border-color: #ff0000;
+    background-color: rgba(255,0,0,0.2);
+}
+
+.error-text {
+    color: red
+}
+
+.error-text::before {
+    content: "*";
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
